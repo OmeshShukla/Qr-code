@@ -22,7 +22,13 @@
 </div>
 <script type="text/javascript">
 function onScanSuccess(qrCodeMessage) {
+    let todec = 10;
+    console.log("")
     document.getElementById('result').innerHTML = '<span class="result">'+qrCodeMessage+'</span>';
+    if (qrCodeMessage == "true")
+    {
+
+    }
 }
 function onScanError(errorMessage) {
   //handle scan error
